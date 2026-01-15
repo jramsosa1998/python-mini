@@ -36,3 +36,30 @@ for name, props in particles.items():
 #calculate total KE
 total_ke = sum(props["kinetic_energy"] for props in particles.values())
 print(f"\nTotal kinetic energy of all particles: {total_ke:.2e} J") 
+
+#Save particles to file
+
+with open("particles.txt", "w") as file:
+    for name, props in particles.items():
+        line = f"{name},{props['mass']}, {props['velocity']}, {props['kinetic_energy']}\n"
+    file.write(line)
+
+print("\nParticles saved to particle.txt")
+
+#Load particles from file 
+
+loaded_particles = {}
+
+with open("particles.txt", "r") as file:
+    for line in file: 
+        name, mass, velocity, ke = line.strip().split(",")
+
+        loaded_particles[name] = {
+        "mass": float(mass),
+        "velocity": float(velocity),
+        "kinetic_energy": float(ke)
+        }
+
+print("\nLoaded particles from file:")
+for name, props in loaded_particles.items():
+    print(f"{name},{props}")
