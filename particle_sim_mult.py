@@ -1,7 +1,25 @@
 #Particle_sim_mult.py
 
+import os
+
+filename = "particles.txt"
+
+# Safe Load
+
+if os.path.exists(filename):
+    particles = {}
+    with open("particles.txt", "r") as file:
+        for line in file: 
+            name, mass, velocity, ke = line.strip().split(",")
+            particles[name] = {
+             "mass": float(mass),
+            "velocity": float(velocity),
+            "kinetic_energy": float(ke)
+        }
+else:
+    particles = {
+
 #Dictionary of initial particles
-particles = {
     "electron": {"mass": 9.11e-31, "velocity": 2e6},
     "proton"  : {"mass": 1.67e-27, "velocity": 1e5},
 }
@@ -22,8 +40,13 @@ while True:
         break
 
     name = input("Enter particle name: ")
-    mass = float(input(f"Enter mass of {name} in kg: "))
-    velocity = float(input(f"Enter velocity of {name} in m/s: "))
+    
+    try:
+        mass = float(input(f"Enter mass of {name} in kg: "))
+        velocity = float(input(f"Enter velocity of {name} in m/s: "))
+    except ValueError:
+        print("Mass and velocity must be numbers.")
+        continue
 
     particles[name] = {"mass": mass, "velocity": velocity}
     particles[name]["kinetic_energy"] = kinetic_energy(mass,velocity)
@@ -42,7 +65,7 @@ print(f"\nTotal kinetic energy of all particles: {total_ke:.2e} J")
 with open("particles.txt", "w") as file:
     for name, props in particles.items():
         line = f"{name},{props['mass']}, {props['velocity']}, {props['kinetic_energy']}\n"
-    file.write(line)
+        file.write(line)
 
 print("\nParticles saved to particle.txt")
 
@@ -50,16 +73,8 @@ print("\nParticles saved to particle.txt")
 
 loaded_particles = {}
 
-with open("particles.txt", "r") as file:
-    for line in file: 
-        name, mass, velocity, ke = line.strip().split(",")
-
-        loaded_particles[name] = {
-        "mass": float(mass),
-        "velocity": float(velocity),
-        "kinetic_energy": float(ke)
-        }
 
 print("\nLoaded particles from file:")
 for name, props in loaded_particles.items():
     print(f"{name},{props}")
+    
