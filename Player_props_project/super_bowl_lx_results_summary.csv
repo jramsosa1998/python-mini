@@ -1,0 +1,11 @@
+Player,Prop,Tier,Lean,Edge_pp,Final,Result,Outcome_Type,Hit,Edge_Bucket
+Drake Maye,Rush Yds O36.5,Core,Over,11,37,HIT,Structural Win,1,10-12
+Kenneth Walker III,Rec Yds O20.5,Core,Over,9,26,HIT,Structural Win,1,7-9
+Drake Maye,Throws INT,Divergence,Yes,12,2,HIT,Structural Win,1,10-12
+TreVeyon Henderson,1+ Reception,Median,Yes,13,1,HIT,Structural Win,1,13+
+Sam Darnold,1.5 Pass TD,Boom,Over,6,1,MISS,Structural Loss,0,4-6
+Kayshon Boutte,Rec Yds O30.5,Median,Over,5,21,MISS,Structural Loss,0,4-6
+Jaxon Smith-Njigba,Receptions O6.5,Median,Over,7,4,MISS,Structural Loss,0,7-9
+Jaxon Smith-Njigba,Anytime TD,Boom,Yes,5,0,MISS,Structural Loss,0,4-6
+Rashid Shaheed,Longest Rec O14.5,Boom,Over,3,16,HIT,Variance Win,1,<=3
+Mack Hollins,Rec Yds O26.5,Median,Over,2,78,HIT,Variance Win,1,<=3
