@@ -34,8 +34,7 @@ This project contains my analysis of player prop predictions for the **Bears vs 
 [![View Notebook](https://img.shields.io/badge/View-Notebook-blue?logo=jupyter)](https://nbviewer.org/format/script/github/jramsosa1998/python-mini/blob/main/Player_props_project/Player_BearsRamsprops_ipynb.ipynb)
 
 ---
-
-### Seahawks vs Rams — Player Prop Analysis (Iteration II)
+# Seahawks vs Rams — Player Prop Analysis (Iteration II)
 
 Iteration II expands the foundational tracking system built in Project I by introducing:
 
@@ -56,7 +55,7 @@ To evaluate player props using a structured decision-quality framework that sepa
 - Thesis correctness
 - Variance vs misread
 
-Core evaluation pillars:
+# Core evaluation pillars:
 
 - Volume trends  
 - Game script probability  
@@ -144,9 +143,7 @@ The Seahawks vs Rams project serves as the refinement phase before full portfoli
 3. Run cells sequentially  
 4. Update postgame grading fields manually  
 
----
-
-Author: Jesse
+Author: Jesse  
 Project Type: Structured Analytical Development  
 Iteration: II  
 Accuracy: 75%
