@@ -33,7 +33,7 @@ This project contains my analysis of player prop predictions for the **Bears vs 
 **View Notebook:**  
 [![View Notebook](https://img.shields.io/badge/View-Notebook-blue?logo=jupyter)](https://nbviewer.org/format/script/github/jramsosa1998/python-mini/blob/main/Player_props_project/Player_BearsRamsprops_ipynb.ipynb)
 
-
+---
 
 ### Seahawks vs Rams — Player Prop Analysis (Iteration II)
 
@@ -47,8 +47,6 @@ Iteration II expands the foundational tracking system built in Project I by intr
 
 This project strengthens analytical discipline while maintaining a focused prop sample.  
 Prop tier exposure and portfolio structuring are introduced in Iteration III (Super Bowl Case Study).
-
----
 
 # Project Objective
 
@@ -68,8 +66,6 @@ Core evaluation pillars:
 
 This is a process-driven evaluation system — not a picks sheet.
 
----
-
 # Pregame Script Model
 
 Primary assumptions entering the slate:
@@ -81,8 +77,6 @@ Primary assumptions entering the slate:
 
 Each prop was evaluated relative to these assumptions.
 
----
-
 # Results Summary
 
 Total Props: **4**  
@@ -93,8 +87,6 @@ OVER Props Correct: **2**
 UNDER Props Correct: **1**
 
 Two selections favored players on the losing team, challenging the market assumption that props on trailing teams are inherently weaker.
-
----
 
 # Miss Classification
 
@@ -114,8 +106,6 @@ This reinforces the distinction between:
 
 Iteration II emphasizes evaluating decision quality independent of final stat variance.
 
----
-
 # Key Takeaways
 
 - Volume and matchup-based analysis can outperform market script bias  
@@ -124,8 +114,6 @@ Iteration II emphasizes evaluating decision quality independent of final stat va
 - Separating team outcome from player usage improves analytical clarity  
 
 The 3/4 performance — including two props on the losing team — supports the repeatability of the process under varied script conditions.
-
----
 
 # Evolution → Iteration III (Super Bowl Case Study)
 
@@ -140,15 +128,11 @@ Iteration III formalizes this model into a capped portfolio case study introduci
 
 The Seahawks vs Rams project serves as the refinement phase before full portfolio implementation.
 
----
-
 # Tech Stack
 
 - Python  
 - Pandas  
 - Jupyter Notebook  
-
----
 
 # How To Run
 
