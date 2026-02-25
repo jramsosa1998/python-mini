@@ -36,7 +36,6 @@ This project contains my analysis of player prop predictions for the **Bears vs 
 ---
 
 ### Seahawks vs Rams — Player Prop Analysis (Iteration II)
-Date: 2/10/2026
 
 Iteration II expands the foundational tracking system built in Project I by introducing:
 
